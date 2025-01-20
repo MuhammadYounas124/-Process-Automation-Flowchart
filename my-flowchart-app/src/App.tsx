@@ -3,6 +3,7 @@ import Propertypanel from "./Propertypanel";
 import { useState } from "react";
 import Toolbox from "./toolbox";
 
+
 const App = () => {
 
     const [selectedNode, _setSelectedNode] = useState(null);
@@ -10,7 +11,9 @@ const App = () => {
 
         <div style={{ display: 'flex', height: '100vh' }}>
         <Toolbox />
-        <FlowCanvas />
+        <FlowCanvas onNodeClick={function (_event: any): void {
+          throw new Error("Function not implemented.");
+        } } />
         <Propertypanel selectednode={selectedNode} />
       </div>
 

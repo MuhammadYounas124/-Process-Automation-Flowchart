@@ -16,14 +16,12 @@ const propertypanel = ({selectednode}:{selectednode:any}) => {
                 <input
                  type="text"
                  value={selectednode.data.label}
-                 onChange={(e)=>
-                    selectednode.data.label(e.target.value)
-                 }
+
                 />
             </label>
         </div>
 
-    );
+    )
 
 };
 
